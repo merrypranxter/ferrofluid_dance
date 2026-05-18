@@ -1,0 +1,59 @@
+{
+  "name": "ferrofluid_dance",
+  "version": "1.0.0",
+  "description": "Magnetic fluid spike simulation, field line visualization, black liquid geometry responding to moving magnetic fields",
+  "category": "materials/magnetism",
+  "tags": ["ferrofluid", "magnetism", "spikes", "black_liquid", "field_lines", "physics", "materials", "fluid", "magnetic", "Rosensweig"],
+  "primary_concepts": [
+    "Magnetic dipole field visualization",
+    "Rosensweig instability spike formation",
+    "Field line superposition from multiple magnets",
+    "Dynamic field manipulation (rotation, oscillation)",
+    "Ferrofluid as black aesthetic material",
+    "Surface energy minimization",
+    "Magnetic susceptibility response"
+  ],
+  "blend_suggestions": [
+    "kirlian_discharge",
+    "plasma_cosmology_vis",
+    "crystalline",
+    "fungi",
+    "slime_molds",
+    "Lichtenberg_burn"
+  ],
+  "code_templates": [
+    "code/basic_ferrofluid.glsl",
+    "code/multi_magnet.glsl",
+    "code/vortex_field.glsl",
+    "code/oscillating_spikes.glsl",
+    "code/emotional_ferrofluid.glsl",
+    "code/biological_ferrofluid.glsl",
+    "code/cosmic_ferrofluid.glsl",
+    "code/glitch_ferrofluid.glsl"
+  ],
+  "parameter_space": {
+    "magnetStrength": {"type": "float", "range": [0.0, 10.0], "default": 3.0},
+    "magnetCount": {"type": "int", "range": [1, 20], "default": 1},
+    "susceptibility": {"type": "float", "range": [0.1, 5.0], "default": 2.0},
+    "surfaceTension": {"type": "float", "range": [0.1, 5.0], "default": 1.0},
+    "viscosity": {"type": "float", "range": [0.1, 5.0], "default": 1.0},
+    "spikeSharpness": {"type": "float", "range": [0.1, 3.0], "default": 1.5},
+    "fieldOscillation": {"type": "float", "range": [0.0, 5.0], "default": 0.5},
+    "gravity": {"type": "float", "range": [0.0, 2.0], "default": 1.0},
+    "colorMode": {"type": "enum", "options": ["black", "blue_edge", "gold_highlight", "rainbow"], "default": "black"},
+    "biologicalMode": {"type": "bool", "default": false},
+    "glitchAmount": {"type": "float", "range": [0.0, 1.0], "default": 0.0}
+  },
+  "artistic_keywords": [
+    "ferrofluid",
+    "magnetic spikes",
+    "black liquid",
+    "field lines",
+    "Sachiko Kodama",
+    "Rosensweig instability",
+    "obedience",
+    "biomechanical",
+    "HR Giger",
+    "Zelf Koelman"
+  ]
+}
