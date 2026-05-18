@@ -152,7 +152,7 @@ Corrupted magnetism:
 
 **+ `fungi`** → Mycelial ferrofluid. Branching hyphal networks that follow field lines. Spore release triggered by magnetic pulses. The fluid is a fungal colony.
 
-**+ ` Lichtenberg_burn`** → Dielectric breakdown patterns captured in ferrofluid. Lightning burned into oil. The fluid records electrical trauma like a photograph.
+**+ `Lichtenberg_burn`** → Dielectric breakdown patterns captured in ferrofluid. Lightning burned into oil. The fluid records electrical trauma like a photograph.
 
 **+ `neural_architecture`** → Ferrofluid as brain tissue. Neurons as magnetic field lines. Synapses as spike junctions. Thought as magnetic topology.
 
