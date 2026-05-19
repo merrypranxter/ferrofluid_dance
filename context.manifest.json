@@ -11,7 +11,16 @@
     "Dynamic field manipulation (rotation, oscillation)",
     "Ferrofluid as black aesthetic material",
     "Surface energy minimization",
-    "Magnetic susceptibility response"
+    "Magnetic susceptibility response",
+    "Audio-frequency driven capillary waves",
+    "Labyrinthine domain patterns from rotating in-plane field",
+    "Halbach array unilateral flux concentration",
+    "Hele-Shaw cell finger instability",
+    "Ferrofluid as neural tissue analog",
+    "Biot-Savart / Helmholtz coil field topology",
+    "Inverse ferrofluid: droplets in non-magnetic carrier",
+    "Magnetic field as crystal growth director",
+    "Ferrofluid as information medium"
   ],
   "blend_suggestions": [
     "kirlian_discharge",
@@ -29,7 +38,15 @@
     "code/emotional_ferrofluid.glsl",
     "code/biological_ferrofluid.glsl",
     "code/cosmic_ferrofluid.glsl",
-    "code/glitch_ferrofluid.glsl"
+    "code/glitch_ferrofluid.glsl",
+    "code/audio_ferrofluid.glsl",
+    "code/labyrinthine_ferrofluid.glsl",
+    "code/halbach_array.glsl",
+    "code/hele_shaw_ferrofluid.glsl",
+    "code/neural_ferrofluid.glsl",
+    "code/biot_savart_coil.glsl",
+    "code/inverse_ferrofluid.glsl",
+    "code/crystal_ferrofluid.glsl"
   ],
   "parameter_space": {
     "magnetStrength": {"type": "float", "range": [0.0, 10.0], "default": 3.0},
@@ -54,6 +71,16 @@
     "obedience",
     "biomechanical",
     "HR Giger",
-    "Zelf Koelman"
+    "Zelf Koelman",
+    "labyrinthine",
+    "Halbach array",
+    "Hele-Shaw",
+    "neural tissue",
+    "crystallization",
+    "dendritic growth",
+    "audio visualization",
+    "capillary waves",
+    "Faraday waves",
+    "droplet splitting"
   ]
 }

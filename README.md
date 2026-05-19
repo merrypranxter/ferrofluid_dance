@@ -92,6 +92,21 @@ See `code/vortex_field.glsl` — rotating magnet creates spiral arm structures i
 ### Oscillating Spike Wave
 See `code/oscillating_spikes.glsl` — magnet moved up and down creates traveling wave through spike array. Liquid that dances.
 
+### Exact Coil Field (Biot-Savart)
+See `code/biot_savart_coil.glsl` — full circular current loop field computed with elliptic integrals. Shows the field reversal outside the loop radius, Helmholtz pair uniform-field region, coil wire cross-sections.
+
+### Halbach Array
+See `code/halbach_array.glsl` — the engineered magnet configuration that concentrates all flux on one side. Perfect-comb spike spacing. No spike competition — just a mathematical forest.
+
+### Hele-Shaw Confined Ferrofluid
+See `code/hele_shaw_ferrofluid.glsl` — ferrofluid in a thin-gap cell. Top-view perspective. Finger instability, labyrinthine pattern freezing, droplet splitting.
+
+### Audio-Driven Ferrofluid
+See `code/audio_ferrofluid.glsl` — FFT frequency bands modulate capillary waves and spike formation. Bass = slow heave; treble = micro-shimmer. Drives from Web Audio API FFT data.
+
+### Labyrinthine Domains
+See `code/labyrinthine_ferrofluid.glsl` — rotating in-plane (tangential) field drives stripe-domain formation and labyrinthine pattern evolution. Traveling wave fronts. Magnetic solitons at the stripe/spike phase boundary.
+
 ---
 
 ## OUTSIDE THE BOX (Creative Destinations)
@@ -139,6 +154,15 @@ Corrupted magnetism:
 - Rapid field reversal causes spike "strobe" — fluid can't keep up, creates ghost images
 - Partial magnetization — some particles align, others don't, creating patchy, diseased-looking growth
 - "Dead zones" in the magnet create flat circles surrounded by spikes — wounds in the field
+
+### Neural Ferrofluid
+See `code/neural_ferrofluid.glsl` — the spike array as a cortical column map. Spikes fire like action potentials, connected by field-line "axons" that glow on activation. Spreading depression waves. Kuramoto synchrony.
+
+### Inverse Ferrofluid
+See `code/inverse_ferrofluid.glsl` — ferrofluid as droplets in non-magnetic carrier. Black bubbles in amber oil. The magnet drives coalescence, chaining, elongation toward the field. What it looks like when obedience is turned inside out.
+
+### Crystal Ferrofluid
+See `code/crystal_ferrofluid.glsl` — the spike pattern arrested and crystallized into magnetite mineral. Dendritic fractal growth following field gradient lines. Faceted euhedral crystal faces at cleavage angles. Iron oxide made permanent.
 
 ---
 
@@ -203,22 +227,34 @@ When this repo is loaded into RepoScripter as context:
 ## FILES
 
 ```
-README.md                    <— You are here
-context.manifest.json        <— RepoScripter ingestion manifest
+README.md                         <— You are here
+context.manifest.json             <— RepoScripter ingestion manifest
 code/
-  basic_ferrofluid.glsl     <— Dipole field + spike approximation
-  multi_magnet.glsl         <— Field superposition
-  vortex_field.glsl         <— Rotating magnet spiral arms
-  oscillating_spikes.glsl   <— Wave propagation through fluid
-  emotional_ferrofluid.glsl <— Feeling drives magnetism
-  biological_ferrofluid.glsl <— Growth, predation, evolution
-  cosmic_ferrofluid.glsl    <— Astronomical scale
-  glitch_ferrofluid.glsl    <— Corrupted field, sick spikes
+  basic_ferrofluid.glsl          <— Dipole field + spike approximation
+  multi_magnet.glsl              <— Field superposition, spike competition
+  vortex_field.glsl              <— Rotating magnet spiral arms
+  oscillating_spikes.glsl        <— Wave propagation through fluid
+  emotional_ferrofluid.glsl      <— Feeling drives magnetism (5 states)
+  biological_ferrofluid.glsl     <— Growth, predation, evolution
+  cosmic_ferrofluid.glsl         <— Astronomical scale: magnetars, prominences
+  glitch_ferrofluid.glsl         <— Corrupted field, sick spikes
+  audio_ferrofluid.glsl          <— FFT-band-driven capillary waves
+  labyrinthine_ferrofluid.glsl   <— Rotating in-plane field → domain labyrinths
+  halbach_array.glsl             <— Halbach array: unilateral flux, perfect comb
+  hele_shaw_ferrofluid.glsl      <— Hele-Shaw cell: fingers, Saffman-Taylor analog
+  neural_ferrofluid.glsl         <— Spikes as neurons, field lines as axons
+  biot_savart_coil.glsl          <— Exact current loop field (elliptic integrals)
+  inverse_ferrofluid.glsl        <— Ferrofluid droplets in non-magnetic carrier
+  crystal_ferrofluid.glsl        <— Magnetic crystal growth, magnetite dendrites
 docs/
-  magnetism_physics.md      <— Real ferrofluid science
-  rosenweig_instability.md  <— The math of spike formation
-  ferrofluid_art_history.md <— Sachiko Kodama, Zelf Koelman, etc.
-  color_and_material.md     <— Why it's black, how to light it
+  magnetism_physics.md           <— Real ferrofluid science (Langevin, Kelvin force)
+  rosenweig_instability.md       <— The math of spike formation (full analysis)
+  ferrofluid_art_history.md      <— Sachiko Kodama, Zelf Koelman, HR Giger, etc.
+  color_and_material.md          <— Why it's black, how to light it, rendering ref
+  shader_parameter_guide.md      <— Every uniform: range, effect, tuning, presets
+  audio_driven_ferrofluid.md     <— FFT bands, capillary dispersion, Web Audio API
+  simulation_techniques.md       <— Field solvers, surface methods, GPU approaches
+  field_visualization_reference.md <— Field line topology, nulls, color mapping
 images/
   [placeholders for reference imagery]
 ```
