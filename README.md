@@ -262,7 +262,7 @@ code/
   crystal_ferrofluid.glsl        — Magnetic crystal growth, magnetite dendrites
 docs/
   magnetism_physics.md           — Real ferrofluid science (Langevin, Kelvin force)
-  rosenweig_instability.md       — The math of spike formation (full analysis)
+  rosensweig_instability.md      — The math of spike formation (full analysis)
   ferrofluid_art_history.md      — Sachiko Kodama, Zelf Koelman, HR Giger, etc.
   color_and_material.md          — Why it's black, how to light it, rendering ref
   shader_parameter_guide.md      — Every uniform: range, effect, tuning, presets

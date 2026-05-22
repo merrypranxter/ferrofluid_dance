@@ -92,7 +92,7 @@
     "code/glitch_ferrofluid.glsl",
     "code/audio_ferrofluid.glsl",
     "docs/magnetism_physics.md",
-    "docs/rosenweig_instability.md",
+    "docs/rosensweig_instability.md",
     "docs/color_and_material.md",
     "docs/shader_parameter_guide.md",
     "docs/simulation_techniques.md",
