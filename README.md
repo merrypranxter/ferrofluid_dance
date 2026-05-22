@@ -213,6 +213,19 @@ See `code/crystal_ferrofluid.glsl` — the spike pattern arrested and crystalliz
 
 ---
 
+## VIEWING / RUNNING
+
+All shaders in `code/` are **GLSL fragment shaders** (GLSL ES 3.00). They can be run in any WebGL-capable environment that accepts fragment shaders with standard uniforms:
+
+- **[Shadertoy](https://www.shadertoy.com/)** — paste shader source, map uniforms (`iTime` → `time`, `iResolution` → `resolution`)
+- **[GLSL Sandbox](http://glslsandbox.com/)** — paste directly; `uniform float time` and `uniform vec2 resolution` are provided automatically
+- **[KodeLife](https://hexler.net/kodelife)** — desktop GLSL live-coding with full uniform support
+- Any WebGL fragment shader host that provides `time`, `resolution`, and custom uniforms
+
+The audio-reactive shader (`audio_ferrofluid.glsl`) additionally requires a `sampler2D` FFT texture fed from the Web Audio API.
+
+---
+
 ## REPOSCRIPTER INTEGRATION
 
 When this repo is loaded into RepoScripter as context:
@@ -221,42 +234,43 @@ When this repo is loaded into RepoScripter as context:
 - **Field line superposition** offers complex pattern generation from simple rules
 - **The black aesthetic** is crucial — this is dark, oily, metallic, NOT bright or airy
 - The AI should feel free to make ferrofluid represent: hair, coral, city skylines, sound waves, neural tissue, writing systems, trauma, compliance, obedience
+- See `context.manifest.json` for the full machine-readable ingestion manifest (tags, visual motifs, techniques, palette, blend targets, ignore patterns)
 
 ---
 
-## FILES
+## REPOSITORY STRUCTURE
 
 ```
-README.md                         <— You are here
-context.manifest.json             <— RepoScripter ingestion manifest
+README.md                         — You are here
+context.manifest.json             — RepoScripter ingestion manifest (machine-readable)
 code/
-  basic_ferrofluid.glsl          <— Dipole field + spike approximation
-  multi_magnet.glsl              <— Field superposition, spike competition
-  vortex_field.glsl              <— Rotating magnet spiral arms
-  oscillating_spikes.glsl        <— Wave propagation through fluid
-  emotional_ferrofluid.glsl      <— Feeling drives magnetism (5 states)
-  biological_ferrofluid.glsl     <— Growth, predation, evolution
-  cosmic_ferrofluid.glsl         <— Astronomical scale: magnetars, prominences
-  glitch_ferrofluid.glsl         <— Corrupted field, sick spikes
-  audio_ferrofluid.glsl          <— FFT-band-driven capillary waves
-  labyrinthine_ferrofluid.glsl   <— Rotating in-plane field → domain labyrinths
-  halbach_array.glsl             <— Halbach array: unilateral flux, perfect comb
-  hele_shaw_ferrofluid.glsl      <— Hele-Shaw cell: fingers, Saffman-Taylor analog
-  neural_ferrofluid.glsl         <— Spikes as neurons, field lines as axons
-  biot_savart_coil.glsl          <— Exact current loop field (elliptic integrals)
-  inverse_ferrofluid.glsl        <— Ferrofluid droplets in non-magnetic carrier
-  crystal_ferrofluid.glsl        <— Magnetic crystal growth, magnetite dendrites
+  basic_ferrofluid.glsl          — Dipole field + spike approximation
+  multi_magnet.glsl              — Field superposition, spike competition
+  vortex_field.glsl              — Rotating magnet spiral arms
+  oscillating_spikes.glsl        — Wave propagation through fluid
+  emotional_ferrofluid.glsl      — Feeling drives magnetism (5 states)
+  biological_ferrofluid.glsl     — Growth, predation, evolution
+  cosmic_ferrofluid.glsl         — Astronomical scale: magnetars, prominences
+  glitch_ferrofluid.glsl         — Corrupted field, sick spikes
+  audio_ferrofluid.glsl          — FFT-band-driven capillary waves
+  labyrinthine_ferrofluid.glsl   — Rotating in-plane field → domain labyrinths
+  halbach_array.glsl             — Halbach array: unilateral flux, perfect comb
+  hele_shaw_ferrofluid.glsl      — Hele-Shaw cell: fingers, Saffman-Taylor analog
+  neural_ferrofluid.glsl         — Spikes as neurons, field lines as axons
+  biot_savart_coil.glsl          — Exact current loop field (elliptic integrals)
+  inverse_ferrofluid.glsl        — Ferrofluid droplets in non-magnetic carrier
+  crystal_ferrofluid.glsl        — Magnetic crystal growth, magnetite dendrites
 docs/
-  magnetism_physics.md           <— Real ferrofluid science (Langevin, Kelvin force)
-  rosenweig_instability.md       <— The math of spike formation (full analysis)
-  ferrofluid_art_history.md      <— Sachiko Kodama, Zelf Koelman, HR Giger, etc.
-  color_and_material.md          <— Why it's black, how to light it, rendering ref
-  shader_parameter_guide.md      <— Every uniform: range, effect, tuning, presets
-  audio_driven_ferrofluid.md     <— FFT bands, capillary dispersion, Web Audio API
-  simulation_techniques.md       <— Field solvers, surface methods, GPU approaches
-  field_visualization_reference.md <— Field line topology, nulls, color mapping
+  magnetism_physics.md           — Real ferrofluid science (Langevin, Kelvin force)
+  rosenweig_instability.md       — The math of spike formation (full analysis)
+  ferrofluid_art_history.md      — Sachiko Kodama, Zelf Koelman, HR Giger, etc.
+  color_and_material.md          — Why it's black, how to light it, rendering ref
+  shader_parameter_guide.md      — Every uniform: range, effect, tuning, presets
+  audio_driven_ferrofluid.md     — FFT bands, capillary dispersion, Web Audio API
+  simulation_techniques.md       — Field solvers, surface methods, GPU approaches
+  field_visualization_reference.md — Field line topology, nulls, color mapping
 images/
-  [placeholders for reference imagery]
+  README.md                      — Reference imagery guide and search terms
 ```
 
 ---
